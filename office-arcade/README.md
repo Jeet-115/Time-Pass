@@ -48,6 +48,14 @@ npm run preview
 
 The built site is in `dist/` — deploy to Netlify, Vercel, GitHub Pages, or any static host.
 
+### Deploy on Vercel
+
+**Option A — deploy the whole repo (recommended):** Import the GitHub repo on [Vercel](https://vercel.com). The root `vercel.json` is already configured to build `office-arcade/`.
+
+**Option B — subdirectory only:** Set **Root Directory** to `office-arcade` in Vercel project settings. The `office-arcade/vercel.json` handles SPA routing.
+
+Both options include rewrites so game routes like `/play/snake` work on refresh.
+
 ## Features
 
 - 🎯 **20 mini games** across puzzle, arcade, reflex, brain, and classic categories

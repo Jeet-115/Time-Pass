@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd office-arcade && npm install && npm run build",
+  "outputDirectory": "office-arcade/dist",
+  "installCommand": "cd office-arcade && npm install",
+  "framework": "vite",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
